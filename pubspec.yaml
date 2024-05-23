@@ -1,7 +1,7 @@
 name: dartutilities
 description: A simple library that contains all utilities that you want
-version: 1.0.0
-repository: https://github.com/ItsMeViipeR/dartutils
+version: 1.0.1
+repository: https://github.com/ItsMeViipeR/dartutilities
 
 environment:
   sdk: ^3.3.1

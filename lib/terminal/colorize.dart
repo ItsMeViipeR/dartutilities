@@ -1,20 +1,49 @@
-enum Logger {
-  black("30"),
-  red("31"),
-  green("32"),
-  yellow("33"),
-  blue("34"),
-  magenta("35"),
-  cyan("36"),
-  white("37");
+extension ToColor on String {
+  String black() {
+    return '\x1B[30m$this\x1B[0m';
+  }
 
-  final String code;
-  const Logger(this.code);
+  String red() {
+    return '\x1B[31m$this\x1B[0m';
+  }
 
-  String log(Object text) {
-    print('\x1B[${code}m$text\x1B[0m');
-    // stdout.write('\x1B[${code}m$text\x1B[0m');
+  String green() {
+    return '\x1B[32m$this\x1B[0m';
+  }
 
-    return '\x1B[${code}m$text\x1B[0m';
+  String yellow() {
+    return '\x1B[33m$this\x1B[0m';
+  }
+
+  String blue() {
+    return '\x1B[34m$this\x1B[0m';
+  }
+
+  String magenta() {
+    return '\x1B[35m$this\x1B[0m';
+  }
+
+  String cyan() {
+    return '\x1B[36m$this\x1B[0m';
+  }
+
+  String white() {
+    return '\x1B[37m$this\x1B[0m';
+  }
+
+  String underline() {
+    return '\x1B[4m$this\x1B[0m';
+  }
+
+  String italic() {
+    return '\x1B[3m$this\x1B[0m';
+  }
+
+  String blur() {
+    return '\x1B[2m$this\x1B[0m';
+  }
+
+  String blink() {
+    return '\x1B[5m$this\x1B[0m';
   }
 }

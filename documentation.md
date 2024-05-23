@@ -80,20 +80,7 @@ List<dynamic> quickSort(List<dynamic> elements, {int Function(dynamic, dynamic)?
 
 ## Colorize
 
-```dart
-enum Logger {
-  black,
-  red,
-  green,
-  yellow,
-  blue,
-  magenta,
-  cyan,
-  white;
-
-  String log(Object text);
-}
-```
+Colorize is based on an extension of String class to add functions to the String class.
 
 ### Usage
 
@@ -101,22 +88,8 @@ enum Logger {
 import 'package:utils/terminal/colorize.dart';
 
 void main() {
-    Logger logger = Logger.red;
+  print("Hello World".red())
 }
 ```
 
-> Init Logger to red
-
-<br />
-
-```dart
-import 'package:utils/terminal/colorize.dart';
-
-void main() {
-    Logger logger = Logger.red;
-
-    logger.log({"hello": "world"});
-}
-```
-
-> Shows {hello: world} in your terminal in red
+> It will print `"Hello World"` in red.
