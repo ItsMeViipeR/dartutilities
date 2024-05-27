@@ -46,4 +46,8 @@ extension ToColor on String {
   String blink() {
     return '\x1B[5m$this\x1B[0m';
   }
+
+  String bold() {
+    return '\x1B[1m$this\x1B[0m';
+  }
 }
